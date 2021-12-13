@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Formularz from '../components/Form'
 import Image from 'next/image'
-
+import Map from '../components/Mapa'
 
 const contact = () => {
     return ( 
@@ -24,11 +24,12 @@ const contact = () => {
             <div className="col">
                 <h2>Kontakt</h2>
                 <p>
-                Tel: +48 690 690 693
-                Ul. Jarzębinowa 3/3
-                05-100 Nowy Dwór Mazowiecki
-                NIP: 5311711763  
+                Tel: +48 690 690 693<br/>
+                Ul. Jarzębinowa 3/3<br/>
+                05-100 Nowy Dwór Mazowiecki<br/>
+                NIP: 5311711763 <br/>
                 </p>  
+                <Map/>
             </div>   
             </div>    
         </div> 

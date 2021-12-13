@@ -7,6 +7,8 @@
   // import 'swiper/scss/pagination';
  
 
+ 
+
   // configure Swiper to use modules
   Swiper.use([Autoplay, Navigation, Pagination]);
 

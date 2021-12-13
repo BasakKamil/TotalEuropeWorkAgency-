@@ -9,7 +9,7 @@ export const SidebarData = [
         title: 'Strona Glowna',
         path: '/',
         icon: <FaBeer />,
-        cName: 'nav-text'
+        cName: 'nav-text',
     },
     {
         title: 'Dla Pracownikow',
@@ -24,9 +24,48 @@ export const SidebarData = [
         cName: 'nav-text'
     },
     {
-        title: 'Contact',
+        title: 'Kontakt',
         path: '/contact',
         icon: <FaBeer />,
         cName: 'nav-text'
+    }
+]
+export const AboutWorker = [ 
+    {   
+        title: 'Dla Pracownika',
+        path: '/aboutworker',
+        cName: 'nav-text-drop'
+    },
+    {   
+        title: 'Praca Stala',
+        path: '/work/permanent ',
+        cName: 'nav-text-drop'
+    },
+    {   
+        title: 'Praca Tymczasowa',
+        path: '/work/temporary',
+        cName: 'nav-text-drop'
+    },
+    {   
+        title: 'Szkolenie',
+        path: '/work/training',
+        cName: 'nav-text-drop'
+    },
+    {   
+        title: 'Praca za granica',
+        path: '/work/abroad',
+        cName: 'nav-text-drop',
+    },
+    {   
+        title: 'Oferty Pracy',
+        path: '/work/offerts',
+        cName: 'nav-text-drop',
+    },
+]
+export const ForEmployer = [ 
+    { title: 'Dla Pracodawcy',
+    path: '/foremployer',
+    cName: 'nav-text-drop',
+
     }
 ]

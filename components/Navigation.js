@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import { useState } from "react";
-import Sidebar from './Sidebar';
+import { useState } from "react"
+import { AboutWorker, ForEmployer } from './SidebarData'
 
 const mystyle = {
     color: "white",
@@ -12,42 +12,56 @@ const mystyle = {
 
 const Navigation = () => {
 
-    const [w, setw] = useState();
-
-
-
-
+    const [drop1, setdrop1] = useState('Drop1Off');
+    const [drop2, setdrop2] = useState('Drop2Off');
+    const handlechange = () => setdrop1(!drop1);
+    const handlechange2 = () => setdrop2(!drop2);
     return ( 
     
-        <div style={mystyle} className="menu">      
-            <nav className="KamilaNav navbar navbar-expand-lg navbar-light">
-                <div className="container-fluid">
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="navbar-brand btn-group">
-                    <Link href="/" passHref>
-                        O nas
-                    </Link>
-                </li>
-                <li className="navbar-brand btn-group">
-                    <Link href="/aboutworker" passHref>
-                        Dla pracownika
-                    </Link>
-                </li>
-                <li className="navbar-brand btn-group">
-                    <Link href="/foremployer" passHref>
-                        Dla pracodawcy
-                    </Link>
-                </li>
-                <li className="navbar-brand btn-group">
-                    <Link href="/contact" passHref>
-                        Kontakt
-                    </Link>
-                </li>
-                </ul>
-                </div>
-            </nav>
-            <Sidebar/>
-        </div>
+        <div className="menu">      
+                    <ul className="navbar-nav me-auto mb-2 mb-md-0">
+                        <li className="navbar-brand btn-group nav-item">
+                            <Link href="/" passHref>
+                                O Nas
+                            </Link>
+                        </li>
+                        <li className="navbar-brand btn-group nav-item KamilaCentral" onMouseOver={handlechange} onMouseOut={handlechange}>
+                                <p className='KamilaDrop'>Dla pracownika</p>
+                                <ul className={drop1? 'Drop1Off' : 'Drop1On' }>
+                                    {AboutWorker.map((item,index) => {
+                                        return(
+                                            <li key={index}>
+                                                    <Link href={item.path} className="nav-item" passHref>
+                                                        <a className={item.cName}>{item.title}</a>
+                                                    </Link>
+                                            </li>
+                                        )
+                                    })}
+                                </ul>
+                        </li>
+                        <li className="navbar-brand btn-group nav-item" onMouseOver={handlechange2} onMouseOut={handlechange2}>
+                                <p className='KamilaDrop'>Dla pracodawcy</p>
+                                <ul className={drop2? 'Drop2Off' : 'Drop2On' }>
+                                    {ForEmployer.map((item,index)=>{
+                                        return (
+                                            <li key={index}>
+                                                <Link href={item.path}>
+                                                    <a className={item.cName}>
+                                                        {item.title}
+                                                    </a>
+                                                </Link>
+                                            </li>
+                                        )
+                                    })}
+                                </ul>
+                        </li>
+                        <li className="navbar-brand btn-group nav-item">
+                            <Link href="/contact" passHref>
+                                Kontakt
+                            </Link>
+                        </li>
+                    </ul>
+            </div>
         
         );
 

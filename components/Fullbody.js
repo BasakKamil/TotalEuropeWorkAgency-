@@ -1,4 +1,4 @@
-import Slider from './Slider2'
+import Slider from './Slider'
 import Image from 'next/image'
 import { useEffect, useState } from "react"
 import Employer from './Employer'
@@ -23,18 +23,18 @@ useEffect(()=>{
 
 
     return ( 
-        <body className="container">
-            <Slider/>
+        <body className="container py-4">
+            {/* <Slider/> */}
             <h3 className="AfterInt">O Nas</h3>
-            <div className="row align-items-md-stretch">
-                <div className="col"><p><WhyWe/></p></div>
-                <div className="col"><p><Employer/></p></div>
+            <div className="row align-items-md-stretch KamCon">
+                <div className="col-md-6"><WhyWe/></div>
+                <div className="col-md-6"><Employer/></div>
             </div>
             <Experience/>
             <Solutions/>
         
-            <div>
-            <Image src="/Unia.png" width={512} height={128} className="UniaImage" alt="Unia"/>
+            <div className='UniaBaner'> 
+                <Image src="/Unia.png" width={600} height={186} className="UniaImage" alt="Unia"/>
             </div>
         </body>
     );

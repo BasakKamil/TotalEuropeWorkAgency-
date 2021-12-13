@@ -1,9 +1,8 @@
 import '../styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import Layout from '../components/Layout'
-
 import { useEffect } from 'react'
-
+import store from '../store/store'
 
 function MyApp({ Component, pageProps }) {
 
@@ -12,7 +11,7 @@ function MyApp({ Component, pageProps }) {
 
   }, []);
 
-  return  <Layout>
+  return  <Layout local="polski" store={store}>
             <Component {...pageProps} />  
           </Layout> 
 }

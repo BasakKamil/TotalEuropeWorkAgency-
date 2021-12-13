@@ -1,9 +1,7 @@
-import Navigation from '../components/Navigation'
-import Footer from '../components/Footer'
-import Logo from '../components/Logo'
-import ChangeLanguage from './ChangeLanguage'
+import Footer from './Footer'
 import { useEffect, useState } from 'react'
 import Loader from './Loader'
+import Menu from './Menu'
 
 const Layout = ({children}) => {
 
@@ -11,9 +9,9 @@ const Layout = ({children}) => {
 
     useEffect(() => {
         window.onload = (event) => {
-            console.log('page is fully loaded');
-            setTimeout(function(){ setload(true) }, 2000);     
-        }; 
+            console.log(event)
+            setload(true);    
+        } 
     }, [])
     if(load)
     return ( 
@@ -21,9 +19,7 @@ const Layout = ({children}) => {
         <div className="page-container">
             <div className="content-wrap">
             <div className="MenuCentral">
-                <Logo/>
-                <Navigation/>
-                <ChangeLanguage/>
+                <Menu/>
             </div>
             <div className="Bodys">
                 {children}

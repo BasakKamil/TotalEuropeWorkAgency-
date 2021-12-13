@@ -1,5 +1,12 @@
 module.exports = {
   reactStrictMode: true,
+  serverless: true,
+  i18n: {
+    localeDetection: false,
+    locales: ["pl", "ru", "en"],
+    defaultLocale: "pl",
+  },
+
 }
 module.exports = {
   webpack(config) {
@@ -9,6 +16,7 @@ module.exports = {
     });
 
     return config
-  }
+  },
+  
 }
 
