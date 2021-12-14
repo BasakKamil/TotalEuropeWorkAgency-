@@ -15,13 +15,62 @@ export const SidebarData = [
         title: 'Dla Pracownikow',
         path: '/aboutworker',
         icon: <FaBeer />,
-        cName: 'nav-text'
+        cName: 'nav-text',
+        subNaV: [
+            {     
+                title: 'Dla Pracownika',
+                path: '/aboutworker',
+                cName: 'nav-text-drop'
+            },
+            {   title: 'Praca Stala',
+                path: '/work/permanent',
+                cName: 'nav-text-drop'
+            },
+            {
+                title: 'Praca Tymczasowa',
+                path: '/work/temporary',
+                cName: 'nav-text-drop'
+            },
+            {
+                title: 'Szkolenie',
+                path: '/work/training',
+                cName: 'nav-text-drop'  
+            },
+            {
+                title: 'Praca za granica',
+                path: '/work/abroad',
+                cName: 'nav-text-drop',
+            },
+            {
+                title: 'Oferty Pracy',
+                path: '/work/offerts',
+                cName: 'nav-text-drop',
+            }
+        ]
     },
     {
         title: 'Dla Pracodawcow',
         path: '/foremployer',
         icon: <FaBeer />,
-        cName: 'nav-text'
+        cName: 'nav-text',
+        subNaV: [
+            {
+                title: 'Leasing',
+                path: '/work/leasing',
+                cName: 'nav-text-drop',
+            },
+            {
+                title: 'Rekrutacja',
+                path: '/work/recruitment',
+                cName: 'nav-text-drop',
+            },
+            {
+                title: 'Doradztwo',
+                path: '/work/counseling',
+                cName: 'nav-text-drop',
+            }
+
+        ]
     },
     {
         title: 'Kontakt',
@@ -38,7 +87,7 @@ export const AboutWorker = [
     },
     {   
         title: 'Praca Stala',
-        path: '/work/permanent ',
+        path: '/work/permanent',
         cName: 'nav-text-drop'
     },
     {   
@@ -63,9 +112,24 @@ export const AboutWorker = [
     },
 ]
 export const ForEmployer = [ 
-    { title: 'Dla Pracodawcy',
-    path: '/foremployer',
-    cName: 'nav-text-drop',
-
+    { 
+        title: 'Dla Pracodawcy',
+        path: '/foremployer',
+        cName: 'nav-text-drop',
+    },
+    {
+        title: 'Leasing',
+        path: '/work/leasing',
+        cName: 'nav-text-drop',
+    },
+    {
+        title: 'Rekrutacja',
+        path: '/work/recruitment',
+        cName: 'nav-text-drop',
+    },
+    {
+        title: 'Doradztwo',
+        path: '/work/counseling',
+        cName: 'nav-text-drop',
     }
 ]

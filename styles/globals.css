@@ -22,6 +22,20 @@ body {
   max-width: 1200px;
   min-height: 400px;
 }
+.KamilaBegin > .LogoKamilBasak{
+  width: 30%;
+  margin-left: 37%;
+  margin-top: 12%;
+}
+.effectBox{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.KamilaBegin > p{
+  width:100%;
+  float: left;
+}
 .ToggleM{
   width: 20%;
   padding: 2%;
@@ -29,11 +43,26 @@ body {
   background: black;
   color: white;
 }
+.KamilaBegin{
+  position: absolute;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  left: 0;
+  text-align: center;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
 .menu > ul > li > a:hover{
-  color: #2ab6ad !important
+  color: #2ab6ad !important;
+  
+}
+.AnimeClassMobile{
+  display: none;
 }
 .menu > ul > li > p:hover{
-  color: #2ab6ad !important
+  color: #2ab6ad !important;
+  
 }
 /* .AfterInt::after{
   content: " ";
@@ -47,9 +76,7 @@ body {
   margin-left: -70px;
 } */
 
-.KamilaBegin{
-  text-align: center;
-}
+
 .experienceBody{
   margin-top: 2%;
   margin-bottom: 2%;
@@ -176,6 +203,9 @@ a {
   color: black !important;
   text-decoration: none !important;
 }
+.LoadH{
+    font-weight: bold;
+}
 .contact-form > label{
   width: 100%;
   float: left;
@@ -210,6 +240,9 @@ a {
     margin: 0;
     width: 100%;
 }
+.LgSelect{
+    text-align: center;
+}
 
 .swiper-slide{
   background-size: cover;
@@ -232,7 +265,7 @@ a {
 }
 .LogoKamilBasak{
   float: left;
-  width: 30%;
+  width: 70%;
   color: black !important;
 }
 .MenuCentral{
@@ -262,5 +295,20 @@ a {
   }
   .KamilaSidebar{
     display: block !important;
+  }
+  .AnimeClassMobile{
+    display: block;
+    position: absolute;
+    left: 25%;
+  }
+  .AnimeClass{
+    display: none;
+  }
+}
+
+
+@media (min-width: 1000px){
+  .AnimeClass{
+    display: block;
   }
 }

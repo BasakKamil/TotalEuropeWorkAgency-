@@ -1,11 +1,15 @@
 import Gif from '../public/gif.svg'
-
+import Logo from './Logo';
+import Ring from './effects/rings'
 const Loader = () => {
     return (
         <div className="KamilaBegin">
-            <h1>Witaj</h1>
-            <h3>Aplikacja wlasnie sie Laduje :)</h3>
-            <Gif/>
+            <Logo/>
+            <p><Gif/></p> 
+            <p className='LoadH'> Total Europe Work Agency sp. Z o.o </p>
+            <p className='effectBox'>
+                <Ring/>
+            </p>
         </div>
     );
 }

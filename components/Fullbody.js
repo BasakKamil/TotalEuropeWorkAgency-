@@ -17,8 +17,9 @@ const Fullbody = () => {
 useEffect(()=>{
     const width= window.innerWidth/2;
     const height = window.innerHeight/3;
-    setwidth(width);
-    setHeight(height);
+    setwidth(width),
+    setHeight(height)
+
 },[])
 
 

@@ -8,8 +8,7 @@ const Layout = ({children}) => {
     const [load,setload] = useState(false);
 
     useEffect(() => {
-        window.onload = (event) => {
-            console.log(event)
+        window.onload = () => {
             setload(true);    
         } 
     }, [])
