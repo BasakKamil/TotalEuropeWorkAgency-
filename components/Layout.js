@@ -14,7 +14,6 @@ const Layout = ({children}) => {
     }, [])
     if(load)
     return ( 
-        
         <div className="page-container">
             <div className="content-wrap">
             <div className="MenuCentral">
