@@ -17,6 +17,10 @@ body {
   background: none !important;
 }
 
+footer{
+  padding: 2%;
+}
+
 .KamilaSidebar > button{
     color: #fff;
     background-color: #2ab6ad !important;
@@ -97,7 +101,7 @@ body {
   position: relative;
   margin: 0%;
   padding: 2%;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   width: 100%;
 }
 .KamilaDrop{
@@ -115,14 +119,17 @@ body {
 .Drop1On{
     position: absolute;
     background: black;
-    left: 0;
+    left: -20%;
     top: 100%;
 }
 .Drop2On{
   position: absolute;
   background: black;
-  left: 0;
+  left: -20%;
   top: 100%;
+}
+.nav-text-drop{
+  margin: 0 auto;
 }
 .Sol > h3{
     padding: 1%;
@@ -222,6 +229,16 @@ a {
 .menu > ul > li {
   width: 25%;
   text-align: center;
+}
+.Drop1On > li{
+  list-style: none;
+  padding: 2px;
+  margin: 5px;
+}
+.Drop2On > li{
+  list-style: none;
+  padding: 2px;
+  margin: 5px;
 }
 .menu > ul > li > a{
   margin: 0 auto;
