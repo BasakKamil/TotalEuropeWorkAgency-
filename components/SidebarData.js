@@ -1,73 +1,101 @@
-// import * as FaIcons from 'react-icons/fa'
-// import * as AiIcons from 'react-icons/ai'
-// import { IoIcons }  from 'react-icons/io'
+
+
 import { FaBeer } from 'react-icons/fa';
+import * as RiIcons from 'react-icons/ri';
+import * as AiIcons from 'react-icons/ai';
+// import * as FaIcons from 'react-icons/fa';
+import * as IoIcons from 'react-icons/io';
+import * as IoIosBody from 'react-icons/io'
 
 
 export const SidebarData = [
     {
         title: 'Strona Glowna',
         path: '/',
-        icon: <FaBeer />,
+        icon: <AiIcons.AiFillHome />,
+        iconClosed: <RiIcons.RiArrowUpSFill/> ,
+        iconOpend: <RiIcons.RiArrowUpSFill />,
         cName: 'nav-text',
+        cNameTwo: 'nav-text-long'
     },
     {
         title: 'Dla Pracownikow',
         path: '/aboutworker',
-        icon: <FaBeer />,
+        icon: <IoIcons.IoIosPaper/>,
+        iconClosed: <RiIcons.RiArrowUpSFill/> ,
+        iconOpened: <RiIcons.RiArrowUpSFill />,
         cName: 'nav-text',
-        subNaV: [
+        cNameTwo: 'nav-text-long',
+        subNav: [
             {     
                 title: 'Dla Pracownika',
                 path: '/aboutworker',
-                cName: 'nav-text-drop'
+                cName: 'nav-text-drop',
+                icon: <FaBeer />
             },
             {   title: 'Praca Stala',
                 path: '/work/permanent',
-                cName: 'nav-text-drop'
+                cName: 'nav-text-drop',
+                icon: <FaBeer />
             },
             {
                 title: 'Praca Tymczasowa',
                 path: '/work/temporary',
-                cName: 'nav-text-drop'
+                cName: 'nav-text-drop',
+                icon: <FaBeer />
             },
             {
                 title: 'Szkolenie',
                 path: '/work/training',
-                cName: 'nav-text-drop'  
+                cName: 'nav-text-drop',
+                icon: <FaBeer />  
             },
             {
                 title: 'Praca za granica',
                 path: '/work/abroad',
                 cName: 'nav-text-drop',
+                icon: <FaBeer />
             },
             {
                 title: 'Oferty Pracy',
                 path: '/work/offerts',
                 cName: 'nav-text-drop',
+                icon: <FaBeer />
             }
         ]
     },
     {
         title: 'Dla Pracodawcow',
         path: '/foremployer',
-        icon: <FaBeer />,
+        icon: <IoIcons.IoIosBriefcase/>,
+        iconClosed: <RiIcons.RiArrowUpSFill/> ,
+        iconOpened: <RiIcons.RiArrowUpSFill />,
         cName: 'nav-text',
-        subNaV: [
+        cNameTwo: 'nav-text-long',
+        subNav: [
+            {
+                title: 'Dla Pracodawcow',
+                path: '/foremployer',
+                cName: 'nav-text-drop',
+                icon: <FaBeer />
+            },
             {
                 title: 'Leasing',
                 path: '/work/leasing',
                 cName: 'nav-text-drop',
+                icon: <FaBeer />
             },
             {
                 title: 'Rekrutacja',
                 path: '/work/recruitment',
                 cName: 'nav-text-drop',
+                icon: <FaBeer />
             },
             {
                 title: 'Doradztwo',
                 path: '/work/counseling',
                 cName: 'nav-text-drop',
+                icon: <FaBeer />
             }
 
         ]
@@ -75,8 +103,11 @@ export const SidebarData = [
     {
         title: 'Kontakt',
         path: '/contact',
-        icon: <FaBeer />,
-        cName: 'nav-text'
+        icon: <IoIcons.IoIosBody />,
+        iconClosed: <RiIcons.RiArrowUpSFill/> ,
+        iconOpened: <RiIcons.RiArrowUpSFill />,
+        cName: 'nav-text',
+        cNameTwo: 'nav-text-long'
     }
 ]
 export const AboutWorker = [ 

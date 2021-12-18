@@ -15,7 +15,12 @@ body {
   min-height: 100%;
   grid-template-rows: auto 1fr auto;
   background: none !important;
+}
 
+.KamilaSidebar > button{
+    color: #fff;
+    background-color: #2ab6ad !important;
+    border-color: #b5b5b5 !important;
 }
 .mySwiper{
   width: 100%;
@@ -203,6 +208,27 @@ a {
   color: black !important;
   text-decoration: none !important;
 }
+.IconCLose{
+  color: white;
+  transform: scale(2.5);
+  margin-top: 10%;
+  display: flex;
+  margin-left: 45%;
+}
+.SubNavMenuItem{
+  color: white;
+  list-style: none;
+}
+.menu > ul > li {
+  width: 25%;
+  text-align: center;
+}
+.menu > ul > li > a{
+  margin: 0 auto;
+}
+.SubNavMenuItem > a{
+  color: white !important;
+}
 .LoadH{
     font-weight: bold;
 }
@@ -243,6 +269,9 @@ a {
 .LgSelect{
     text-align: center;
 }
+.iconClass > svg{
+  color: white !important;
+}
 
 .swiper-slide{
   background-size: cover;
@@ -277,7 +306,12 @@ a {
     height: 100px;
     background: white;
 }
-
+.AnimeClassMobile > .LogoKamilBasak{
+  transform: scale(0.8) !important;
+}
+.LogoKamilBasak{
+  margin-left: 20%;
+}
 
 
 @media (min-width: 1200px){
@@ -289,7 +323,7 @@ a {
 
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1050px){
   .menu{
       display: none !important;
   }
@@ -299,7 +333,9 @@ a {
   .AnimeClassMobile{
     display: block;
     position: absolute;
+    width: 50%;
     left: 25%;
+    top: 0;
   }
   .AnimeClass{
     display: none;
@@ -307,7 +343,7 @@ a {
 }
 
 
-@media (min-width: 1000px){
+@media (min-width: 1050px){
   .AnimeClass{
     display: block;
   }
